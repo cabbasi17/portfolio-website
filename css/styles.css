@@ -1,33 +1,158 @@
+/* General Reset and Body Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-color: #ffffff;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px; /* Sets the font size to 16px */
-    font-weight: 300; /* Sets the font weight to 300 */
-    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-    color: #000101;
+  background-color: #fff; /* White background */
+  font-family: Arial, sans-serif; /* Fallback font */
+  color: #333;
+}
+
+/* Header Styles */
+header h1 {
+  color: #556b2f; /* Olive green */
+  font-family: 'Playfair Display', serif; /* Playfair Display for header */
+  font-size: 2.5em;
+  margin-top: 20px;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #333;
+  font-family: Arial, sans-serif; /* Body text stays as Arial */
+}
+
+/* Navigation Bar */
+nav ul {
+  list-style-type: none;
+  padding: 10px;
+  background-color: #fff;
+  text-align: center;
+  border-bottom: 2px solid #ddd; /* Optional border for better separation */
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #556b2f; /* Olive green */
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: Arial, sans-serif; /* Body text links */
+}
+
+/* Link Hover Effect */
+nav ul li a:hover,
+a:hover {
+  text-decoration: underline;
+}
+
+/* Main Work Section */
+main {
+  padding: 30px;
+}
+
+h2 {
+  color: #556b2f; /* Olive green */
+  font-family: 'Playfair Display', serif; /* Playfair Display for h2 */
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 500px;
+  margin-right: 20px;
+}
+
+.project-description {
+  flex: 1;
+}
+
+.project h3 {
+  color: #556b2f; /* Olive green */
+  font-family: 'Playfair Display', serif; /* Playfair Display for h3 */
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+  font-family: Arial, sans-serif; /* Body text stays as Arial */
+}
+
+.project a {
+  color: #556b2f; /* Olive green */
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Arial, sans-serif; /* Links in body text */
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+  margin-top: 50px;
+  border-top: 2px solid #ddd; /* Optional border for better separation */
+}
+
+footer h2 {
+  color: #556b2f; /* Olive green */
+  font-family: 'Playfair Display', serif; /* Playfair Display for footer h2 */
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+footer p {
+  color: #333;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+footer a {
+  color: #556b2f; /* Olive green */
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: Arial, sans-serif;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer img {
+  margin-top: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 767px) {
+  .project {
+      flex-direction: column;
+      align-items: center;
   }
-  
-  h1, h2, h3, h4 {
-    line-height: 1.4;
+
+  .project-image {
+      max-width: 100%;
+      margin-right: 0;
   }
-  h1 {
-    font-size: 2.75em;
-    font-weight: 700;
-  }
-  
-  h2 {
-    font-size: 2.25em;
-    font-weight: 700;
-  }
-  
-  h3 {
-    font-size: 1.75em;
-    font-weight: 400;
-  }
-  h4 {
-    font-size: 1.35em;
-    font-weight: 400;
-  }
-  img {
-    width: 100%;
-  }
+}
