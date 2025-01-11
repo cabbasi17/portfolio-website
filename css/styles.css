@@ -1,4 +1,4 @@
-/* General Reset and Body Styling */
+/* General Reset and Box-Sizing */
 * {
   margin: 0;
   padding: 0;
@@ -6,153 +6,394 @@
 }
 
 body {
-  background-color: #fff; /* White background */
-  font-family: Arial, sans-serif; /* Fallback font */
+  font-family: Arial, sans-serif;
   color: #333;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+/* Container Class */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Row and Column Layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.col {
+  flex: 1;
 }
 
 /* Header Styles */
-header h1 {
-  color: #556b2f; /* Olive green */
-  font-family: 'Playfair Display', serif; /* Playfair Display for header */
-  font-size: 2.5em;
-  margin-top: 20px;
-}
-
-header p {
-  font-size: 1.2em;
-  margin-bottom: 30px;
-  color: #333;
-  font-family: Arial, sans-serif; /* Body text stays as Arial */
-}
-
-/* Navigation Bar */
-nav ul {
-  list-style-type: none;
-  padding: 10px;
-  background-color: #fff;
+header {
+  background-color: #7c45a1; /* Olive green */
+  color: white;
+  padding: 20px 0;
   text-align: center;
-  border-bottom: 2px solid #ddd; /* Optional border for better separation */
+}
+
+header .logo img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 nav ul li {
   display: inline;
-  margin: 0 15px;
 }
 
 nav ul li a {
-  color: #556b2f; /* Olive green */
   text-decoration: none;
+  color: rgb(203, 99, 175);
   font-size: 1.2em;
-  font-family: Arial, sans-serif; /* Body text links */
+  transition: color 0.3s;
 }
 
-/* Link Hover Effect */
-nav ul li a:hover,
-a:hover {
-  text-decoration: underline;
+nav ul li a:hover {
+  color: #17cad4;
 }
 
-/* Main Work Section */
-main {
-  padding: 30px;
+/* Hero Section */
+.hero {
+  background-color: #ae97a9;
+  padding: 60px 0;
 }
 
-h2 {
-  color: #556b2f; /* Olive green */
-  font-family: 'Playfair Display', serif; /* Playfair Display for h2 */
-  font-size: 2em;
+.hero h2 {
+  font-size: 2.5em;
+  color: #aa1a97;
   margin-bottom: 20px;
 }
 
-.project {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
 }
 
-.project-image {
+.hero .cta-button {
+  background-color: #9c537a;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.hero .cta-button:hover {
+  background-color: #d4178f;
+}
+
+.hero-img {
   width: 100%;
   max-width: 500px;
-  margin-right: 20px;
+  border-radius: 10px;
 }
 
-.project-description {
-  flex: 1;
+/* New SVG Section */
+.svg-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  text-align: center;
 }
 
-.project h3 {
-  color: #556b2f; /* Olive green */
-  font-family: 'Playfair Display', serif; /* Playfair Display for h3 */
+.svg-container {
+  margin-top: 30px;
+}
+
+#hometown {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.5s ease;
+}
+
+#circle {
+  transition: fill 0.5s ease;
+}
+
+#hometown:hover {
+  transform: rotate(360deg);
+}
+
+#hometown:active {
+  transform: scale(1.2);
+}
+
+/* Work Section */
+#work {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#work h2 {
+  font-size: 2.5em;
+  color: #bf7dbd;
+  margin-bottom: 40px;
+}
+
+#work .col {
+  text-align: center;
+}
+
+#work img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#work h3 {
   font-size: 1.8em;
-  margin-bottom: 10px;
-}
-
-.project p {
-  font-size: 1.1em;
-  line-height: 1.6;
-  color: #333;
-  font-family: Arial, sans-serif; /* Body text stays as Arial */
-}
-
-.project a {
-  color: #556b2f; /* Olive green */
-  font-weight: bold;
-  text-decoration: none;
-  font-family: Arial, sans-serif; /* Links in body text */
-}
-
-.project a:hover {
-  text-decoration: underline;
+  color: #bf7dbd;
+  margin-bottom: 15px;
 }
 
 /* Footer Styles */
 footer {
-  background-color: #fff;
-  padding: 30px;
+  background-color: #556b2f;
+  color: white;
+  padding: 60px 0;
   text-align: center;
-  margin-top: 50px;
-  border-top: 2px solid #ddd; /* Optional border for better separation */
 }
 
 footer h2 {
-  color: #556b2f; /* Olive green */
-  font-family: 'Playfair Display', serif; /* Playfair Display for footer h2 */
-  font-size: 2em;
+  font-size: 2.5em;
   margin-bottom: 20px;
 }
 
 footer p {
-  color: #333;
   font-size: 1.2em;
   margin-bottom: 20px;
-  font-family: Arial, sans-serif;
 }
 
 footer a {
-  color: #556b2f; /* Olive green */
+  color: #bf7dbd;
   text-decoration: none;
-  font-size: 1.2em;
-  font-family: Arial, sans-serif;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
 footer a:hover {
-  text-decoration: underline;
+  color: #d4178f;
 }
 
-footer img {
-  margin-top: 10px;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 767px) {
-  .project {
-      flex-direction: column;
-      align-items: center;
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
   }
 
-  .project-image {
+  .hero h2 {
+      font-size: 2em;
+  }
+
+  .hero p {
+      font-size: 1.1em;
+  }
+
+  .hero .cta-button {
+      padding: 12px 25px;
+      font-size: 1em;
+  }
+
+  #work h2 {
+      font-size: 2.2em;
+  }
+
+  #work img {
       max-width: 100%;
-      margin-right: 0;
+  }
+}
+
+/* New SVG Section */
+.svg-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.svg-container {
+    margin-top: 30px;
+}
+
+#animated-svg {
+    width: 300px;
+    height: 300px;
+    transition: transform 0.5s ease, fill 0.5s ease;
+}
+
+#circle {
+    transition: fill 0.5s ease;
+    fill: lightblue;
+}
+
+/* Add Hover Animation */
+#animated-svg:hover {
+    transform: rotate(360deg) scale(1.2) translateX(20px);
+}
+
+/* Optional: Adding color change on hover */
+#animated-svg:hover #circle {
+    fill: #bf7dbd;  /* Change color on hover */
+}
+/* General Reset and Box-Sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and container styles */
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Navigation */
+header {
+  background-color: #f7f7f7;
+  padding: 20px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #bf7dbd; /* Olive Green */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #bf7dbd;
+}
+
+/* About Section */
+.about-me {
+  padding: 60px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #bf7dbd;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #bf7dbd;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 30px;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Skills List */
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.skills-list li {
+  margin-bottom: 8px;
+}
+
+/* CV Link */
+.cv-link {
+  font-size: 1.2rem;
+  color: #bf7dbd;
+  text-decoration: none;
+  border: 2px solid #bf7dbd;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cv-link:hover {
+  background-color: #bf7dbd;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background-color: #f7f7f7;
+  padding: 20px 0;
+  text-align: center;
+  color: #040404;
+  margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-me {
+      padding: 40px 20px;
+  }
+
+  h1 {
+      font-size: 2rem;
+  }
+
+  .profile-img {
+      width: 150px;
+      height: 150px;
+  }
+
+  h2, h3 {
+      font-size: 1.5rem;
+  }
+
+  p {
+      font-size: 1rem;
+  }
+
+  .skills-list {
+      font-size: 1rem;
+  }
+
+  .cv-link {
+      font-size: 1rem;
   }
 }
