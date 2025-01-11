@@ -1,0 +1,399 @@
+/* General Reset and Box-Sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+/* Container Class */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Row and Column Layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.col {
+  flex: 1;
+}
+
+/* Header Styles */
+header {
+  background-color: #7c45a1; /* Olive green */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header .logo img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(203, 99, 175);
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #17cad4;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #ae97a9;
+  padding: 60px 0;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  color: #aa1a97;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.hero .cta-button {
+  background-color: #9c537a;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.hero .cta-button:hover {
+  background-color: #d4178f;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+/* New SVG Section */
+.svg-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.svg-container {
+  margin-top: 30px;
+}
+
+#hometown {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.5s ease;
+}
+
+#circle {
+  transition: fill 0.5s ease;
+}
+
+#hometown:hover {
+  transform: rotate(360deg);
+}
+
+#hometown:active {
+  transform: scale(1.2);
+}
+
+/* Work Section */
+#work {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#work h2 {
+  font-size: 2.5em;
+  color: #bf7dbd;
+  margin-bottom: 40px;
+}
+
+#work .col {
+  text-align: center;
+}
+
+#work img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#work h3 {
+  font-size: 1.8em;
+  color: #bf7dbd;
+  margin-bottom: 15px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #556b2f;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+footer a {
+  color: #bf7dbd;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #d4178f;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+
+  .hero h2 {
+      font-size: 2em;
+  }
+
+  .hero p {
+      font-size: 1.1em;
+  }
+
+  .hero .cta-button {
+      padding: 12px 25px;
+      font-size: 1em;
+  }
+
+  #work h2 {
+      font-size: 2.2em;
+  }
+
+  #work img {
+      max-width: 100%;
+  }
+}
+
+/* New SVG Section */
+.svg-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.svg-container {
+    margin-top: 30px;
+}
+
+#animated-svg {
+    width: 300px;
+    height: 300px;
+    transition: transform 0.5s ease, fill 0.5s ease;
+}
+
+#circle {
+    transition: fill 0.5s ease;
+    fill: lightblue;
+}
+
+/* Add Hover Animation */
+#animated-svg:hover {
+    transform: rotate(360deg) scale(1.2) translateX(20px);
+}
+
+/* Optional: Adding color change on hover */
+#animated-svg:hover #circle {
+    fill: #bf7dbd;  /* Change color on hover */
+}
+/* General Reset and Box-Sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and container styles */
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Navigation */
+header {
+  background-color: #f7f7f7;
+  padding: 20px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #bf7dbd; /* Olive Green */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #bf7dbd;
+}
+
+/* About Section */
+.about-me {
+  padding: 60px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #bf7dbd;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #bf7dbd;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 30px;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Skills List */
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.skills-list li {
+  margin-bottom: 8px;
+}
+
+/* CV Link */
+.cv-link {
+  font-size: 1.2rem;
+  color: #bf7dbd;
+  text-decoration: none;
+  border: 2px solid #bf7dbd;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cv-link:hover {
+  background-color: #bf7dbd;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background-color: #f7f7f7;
+  padding: 20px 0;
+  text-align: center;
+  color: #040404;
+  margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-me {
+      padding: 40px 20px;
+  }
+
+  h1 {
+      font-size: 2rem;
+  }
+
+  .profile-img {
+      width: 150px;
+      height: 150px;
+  }
+
+  h2, h3 {
+      font-size: 1.5rem;
+  }
+
+  p {
+      font-size: 1rem;
+  }
+
+  .skills-list {
+      font-size: 1rem;
+  }
+
+  .cv-link {
+      font-size: 1rem;
+  }
+}
