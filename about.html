@@ -11,23 +11,27 @@
 <!-- Header Section -->
 <header>
     <div class="container">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="swiftask.html">Switftask</a></li>
-                <li><a href="flourish.html">Flourish</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="navtoggle" id="myNavtoggle">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="swiftask.html">Swiftask</a></li>
+                    <li><a href="flourish.html">Flourish</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <!-- Hamburger menu icon -->
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle"><i class="fas fa-bars"></i></a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </header>
 
 <!-- About Section -->
-<section class="about-me">
+<div class="about-me">
     <div class="container">
         <h1>About Me</h1>
-        <img src="./img/pic.jpg" class="profile-img">
+        <img src="./img/pic.jpg" class="profile-img" alt="profile">
         
         <h2>My Story</h2>
         <p>Hi, I’m Cienna! I’m a UI designer with a unique background in early childhood special education. Over the years, I developed a deep sense of empathy, patience, and creativity while working with children with diverse abilities. These experiences have not only shaped my approach to design but have also given me valuable skills in organization and problem-solving.</p>
@@ -38,7 +42,7 @@
 
         <p>Outside of work, I’m an avid traveler and adventurer. Growing up in different countries has given me a unique perspective on the world and a deep appreciation for diverse cultures. I find inspiration in every journey, whether I’m hiking through nature or exploring new cities.</p>
         
-        <h2>Skills & Tools</h2>
+        <h2>Skills and Tools</h2>
         <ul class="skills-list">
             <li>Figma</li>
             <li>Adobe XD</li>
@@ -50,22 +54,10 @@
             <li>Javascript</li>
         </ul>
 
-        <h3>My CV</h3>
-        <a href="resume/Resume.pdf" download class="cv-link">Download my CV</a>
+        <h2>My Resume</h2>
+        <a href="resume/Resume.pdf" class="button">Resume</a> <!-- Closing the unclosed anchor tag here -->
+    </div> <!-- Closing the container div here -->
+</div> <!-- Closing the about-me div here -->
 
-        <!-- Get in Touch Section -->
-        <h2>Get in Touch</h2>
-        <p>If you'd like to collaborate or have any questions, feel free to reach out to me!</p>
-        <p>Email: <a href="mailto:cabbasi17@gmail.com">cabbasi17@gmail.com</a></p>
-    </div>
-</section>
-
-<!-- Footer Section -->
-<footer id="contact">
-    <div class="container">
-        <p>Copyright Cienna Abbasi 2025</p>
-    </div>
-</footer>
-
-</body>
-</html>
+</body> <!-- Closing the body tag here -->
+</html> <!-- Closing the html tag here -->
