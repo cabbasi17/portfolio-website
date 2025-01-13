@@ -11,15 +11,19 @@
 <!-- Header Section -->
 <header>
     <div class="container">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="swiftask.html">Switftask</a></li>
-                <li><a href="flourish.html">Flourish</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="navtoggle" id="myNavtoggle">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="swiftask.html">Swiftask</a></li>
+                    <li><a href="flourish.html">Flourish</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <!-- Hamburger menu icon -->
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </header>
 
@@ -38,6 +42,36 @@
     </div>
 </div>
 
+<!-- Work Section -->
+<div id="work">
+    <div class="container">
+        <h2>My Work</h2>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-7">
+                <img src="img/switftask.png" alt="Swift Task">
+            </div><!--end col-->
+            <div class="col-sm-12 col-md-6 col-lg-5">
+                <h3>Swift Task</h3>
+                <a href="swiftask.html" class="button">Swiftask</a>
+                <p><strong>The Problem:</strong> Too many things to keep track of. High school and college are busy times for students. Between work and class, students can easily miss assignments and deadlines if they are not keeping track of them.</p>
+                <p><strong>The Solution:</strong> A peaceful, organized, and simple productivity app designed to help students keep track of assignments and deadlines.</p>
+            </div><!--end col-->
+        </div><!--end-->
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-7">
+                <img src="img/flourish.png" alt="Flourish App">
+            </div><!--end col-->
+            <div class="col-sm-12 col-md-6 col-lg-5">
+                <h3>Flourish App</h3>
+                <a href="flourish.html" class="button">Flourish</a>
+                <p><strong>The Problem:</strong> People often use separate apps for physical health, mental well-being, and spiritual growth, leading to a disjointed experience.</p>
+                <p><strong>The Solution:</strong> This app integrates body, mind, and spirit practices into one cohesive platform, providing a holistic approach to wellness. Designed for young adults (22-35), students (18-25), and wellness enthusiasts (20-40).</p>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</div><!--end work-->
+
 <!-- New Project Section (SVG Animation) -->
 <div class="svg-section">
     <div class="container">
@@ -49,38 +83,6 @@
     </div>
 </div>
 
-<!-- Work Section -->
-<div id="work">
-    <div class="container">
-        <h2>My Work</h2>
-        <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-7">
-                <img src="img/switftask.png" alt="Swift Task">
-            </div><!--end col-->
-            <div class="col-sm-12 col-md-6 col-lg-5"></div>
-                <h3>Swift Task</h3>
-                <a href="swiftask.html" class="button">Swiftask</a>
-                <p><strong>The Problem:</strong> Too many things to keep track of. High school and college are busy times for students. Between work and class, students can easily miss assignments and deadlines if they are not keeping track of them.</p>
-                <p><strong>The Solution:</strong> A peaceful, organized, and simple productivity app designed to help students keep track of assignments and deadlines.</p>
-            </div><!--end col-->
-        </div><!--end-->
-          
-
-            <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-7">
-                <img src="img/flourish.png" alt="Flourish App">
-            </div><!--end col-->
-            <div class="col-sm-12 col-md-6 col-lg-5"></div>
-                <h3>Flourish App</h3>
-                <a href="flourish.html" class="button">Flourish</a>
-                <p><strong>The Problem:</strong> People often use separate apps for physical health, mental well-being, and spiritual growth, 
-                leading to a disjointed experience.</p>
-                <p><strong>The Solution:</strong> This app integrates body, mind, and spirit practices into one cohesive platform, providing a holistic approach to wellness. Designed for young adults (22-35), students (18-25), and wellness enthusiasts (20-40).</p>
-            </div><!--end col-->
-        </div><!--end row-->
-    </div><!--end container-->
-</div><!--end work-->
-
 <!-- Contact Section (Footer) -->
 <footer id="contact">
     <div class="container">
@@ -90,6 +92,7 @@
     </div>
 </footer>
 
+<script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
