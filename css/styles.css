@@ -8,13 +8,13 @@
 body {
   font-family: Arial, sans-serif;
   color: #333;
-  line-height: 1.6;
+  line-height: 3;
   background-color: #fff;
 }
 
 /* Container Class */
 .container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -35,14 +35,14 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #7c45a1; /* Olive green */
+  background-color: #7c45a1;
   color: white;
   padding: 20px 0;
   text-align: center;
 }
 
 header .logo img {
-  width: 120px;
+  width: 100px;
   margin-bottom: 20px;
 }
 
@@ -59,24 +59,24 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: rgb(203, 99, 175);
+  color: #883a74;
   font-size: 1.2em;
   transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #17cad4;
+  color: #118187;
 }
 
 /* Hero Section */
 .hero {
-  background-color: #ae97a9;
+  background-color: #804e97;
   padding: 60px 0;
 }
 
 .hero h2 {
   font-size: 2.5em;
-  color: #aa1a97;
+  color: #0f060f;
   margin-bottom: 20px;
 }
 
@@ -162,7 +162,7 @@ nav ul li a:hover {
 
 #work h3 {
   font-size: 1.8em;
-  color: #bf7dbd;
+  color: #9f479c;
   margin-bottom: 15px;
 
   
