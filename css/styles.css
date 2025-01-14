@@ -35,43 +35,17 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #7c45a1;
-  color: white;
+  position: fixed;
+  z-index: 999;
+  background-color: #FFFBEF;
   padding: 20px 0;
-  text-align: center;
-}
-
-header .logo img {
-  width: 100px;
-  margin-bottom: 20px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #883a74;
-  font-size: 1.2em;
-  transition: color 0.3s;
-}
-
-nav ul li a:hover {
-  color: #118187;
+  width: 100%;
 }
 
 /* Hero Section */
 .hero {
   background-color: #804e97;
-  padding: 60px 0;
+  padding: 50px 0;
 }
 
 .hero h2 {
@@ -495,4 +469,8 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+}
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
 }
